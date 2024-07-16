@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance for all Students</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <div class="flex">
+            <a href="#home" class="logo">TechBiz Innovators</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Career Roadmap for<br /><span>All Students</span></h3>
+                <p>Find the right career path in a particular branch with our comprehensive roadmaps and expert mentors.</p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+            <div class="image">
+                <img src="img1.svg" alt="img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="img4.svg" alt="img">
+            </div>
+            <div class="content">
+                <h3>What Sets Us Apart:</h3>
+                <p>Welcome to [Platform Name], your trusted partner in navigating the path to career success. Our platform is designed to empower individuals with the knowledge, tools, and connections they need to thrive in their chosen professions.</p>
+                <p>From aspiring beginners to seasoned professionals, our detailed career guides provide step-by-step pathways to success in various industries.</p>
+                <p> Our team, comprising experts in [relevant fields], is dedicated to ensuring you have access to the best resources and support to achieve your career ambitions.</p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects section -->
+    <section class="subjects" id="subjects">
+        <h1 class="heading"><span>Subjects</span></h1>
+
+        <div class="swiper subjects-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="img5.svg" alt="">
+                    <h3>CSE</h3>
+                    <p>Description for CSE</p>
+                    <a href="#" class="btn btn-primary view-roadmap" data-roadmap="cse-roadmap">View Roadmap</a>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img6.svg" alt="">
+                    <h3>Business Studies</h3>
+                    <p>Description for Business Studies</p>
+                    <a href="#" class="btn btn-primary view-roadmap" data-roadmap="bba-roadmap">View Roadmap</a>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img7.svg" alt="">
+                    <h3>Architecture</h3>
+                    <p>Description for Architecture</p>
+                    <a href="#" class="btn btn-primary view-roadmap" data-roadmap="archi-roadmap">View Roadmap</a>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img8.svg" alt="">
+                    <h3>Psychology</h3>
+                    <p>Description for Psychology</p>
+                    <a href="#" class="btn btn-primary view-roadmap" data-roadmap="psy-roadmap">View Roadmap</a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Roadmap details -->
+         <!--here i ve given only cse part-->
+        <div id="cse-roadmap" class="branch-roadmap" style="display: none;">
+            <h2 class="text-center">CSE Roadmap</h2>
+            <ul>
+                <li>Step 1: Learn about sensors and microcontrollers.</li>
+                <li>Step 2: Understand IoT platforms.</li>
+                <li>Step 3: Build basic IoT projects.</li>
+                <li>Step 4: Advanced IoT applications.</li>
+            </ul>
+            <div class="mentor-section">
+                <h2 class="text-center">Mentors</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Expert in IoT with over 10 years of experience.</p>
+                                <a href="#" class="btn btn-primary connect-mentor">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resources mt-5">
+                <h2 class="text-center">Resources</h2>
+                <p class="text-center">Explore various resources to enhance your skills and knowledge.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">IoT Tutorials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary back-to-roadmap">Back to Roadmaps</button>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
